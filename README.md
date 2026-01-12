@@ -106,56 +106,56 @@ JavaScript files (example):
 ## 🚀 Getting Started (Run Locally)
 
 ### Step 1: Clone the Repository
+
 ```bash
 git clone https://github.com/your-username/your-repo-name.git
-Step 2: Open Project Folder
-bash
-Copy code
+```
+
+### Step 2: Open Project Folder
+
+```bash
 cd your-repo-name
-Step 3: Run Using Live Server
-Open project in VS Code
+```
 
-Install Live Server extension
+### Step 3: Run Using Live Server
 
-Right-click index.html
-
-Select Open with Live Server
+- Open the project in **VS Code**
+- Install the **Live Server** extension
+- Right-click `index.html`
+- Select **Open with Live Server**
 
 The project will open in your browser.
 
-📸 Screenshots (Optional)
-Add screenshots to improve presentation:
+---
 
-md
-Copy code
-![Home Page](./screenshots/home.png)
-![Product Details](./screenshots/details.png)
-![Cart Page](./screenshots/cart.png)
-🎓 Course Information
-Course: AICT Lab
+## 🎓 Course Information
 
-Project Type: CCP (Course Completion Project)
+- **Course:** AICT Lab  
+- **Project Type:** CCP (Course Completion Project)  
+- **Project Title:** E-Commerce Web Application (E-Shop)  
+- **University:** IQRA University  
 
-Project Title: E-Commerce Web Application (E-Shop)
+---
 
-University: IQRA University
+## 👤 Author
 
-👤 Author
-Mohsin Ali Mughal
-Student ID: 74669
-Project Name: E-Shop by Mohsin.io
+**Mohsin Ali Mughal**  
+Student ID: **74669**  
+Project Name: **E-Shop by Mohsin.io**
 
-📚 References & Credits
-Bootstrap 5 Documentation
+---
 
-DummyJSON API
+## 📚 References & Credits
 
-SweetAlert2
+- Bootstrap 5 Documentation  
+- DummyJSON API  
+- SweetAlert2  
+- Bootstrap Icons  
+- Google Fonts  
 
-Bootstrap Icons
+---
 
-Google Fonts
+## 📄 License
 
-📄 License
-This project is created for educational purposes only.
+This project is created for educational purposes only.  
 You may add a license (e.g., MIT) if required.
