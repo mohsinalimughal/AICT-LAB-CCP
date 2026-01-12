@@ -1,6 +1,62 @@
-E-Shop by Mohsin.io 🛒A modern, responsive E-Commerce web application developed as part of the AICT Lab course1. This project simulates a real-world online shopping experience, featuring dynamic product fetching, persistent cart management, and a sleek user interface2.+1🚀 Live DemoCheck out the live application here: https://aict-lab-ccp.vercel.app/ 3✨ Key FeaturesDynamic Product Grid: Fetches and renders real-time data from the DummyJSON API4444.+1Interactive Carousel: Displays promotional banners for a professional shopping aesthetic5.Persistent Shopping Cart: Items remain in your cart even after refreshing the page, thanks to Local Storage integration6666.+1Detailed Product Views: Navigate to specific product pages to view descriptions, categories, and adjust quantities7777.+1Smart Cart Logic: Automatically detects duplicate items to increment quantity instead of creating extra entries8888.+1Aesthetic Notifications: Integrated SweetAlert2 for beautiful, user-friendly confirmation dialogs9999.+1🛠️ Technologies UsedTechnologyUsageHTML5Semantic structure of the application10.CSS3Custom styling with a Green & Orange theme11.Bootstrap 5.3Responsive grid layouts and UI components12.JavaScript (ES6)DOM manipulation, API integration, and business logic13.DummyJSON APISource for product data and specifications14141414.+1SweetAlert2Interactive pop-up alerts15.🏗️ System ArchitectureThe application is built as a multi-page frontend experience16:Home Page (index.html): Features the product listing and carousel17.Product Details (seemore.html): Dynamic page that fetches details based on a stored Product ID18.Cart Management (cart.html): Renders items from Local Storage and calculates totals dynamically19.Contact Us (contact.html): A dedicated interface for user inquiries20.📂 Installation & SetupClone the repository:Bashgit clone https://github.com/your-username/e-shop-mohsin.git
-Navigate to the project folder:Bashcd e-shop-mohsin
-Open the project:Simply open index.html in your preferred web browser.📝 Implementation HighlightsThe core of the cart's persistence lies in the use of localStorage21:JavaScript// Adding to cart with duplicate check [cite: 74, 75, 79]
+# 🛒 E-Shop by Mohsin.io
+
+[cite_start]A fully functional, responsive E-Commerce web application developed to simulate a modern online shopping experience[cite: 21, 22]. [cite_start]This project leverages public APIs and local browser storage to provide a seamless user interface for browsing and managing products[cite: 23, 27, 28].
+
+---
+
+## 🚀 Live Demo
+[cite_start]**View the project live on Vercel:** [https://aict-lab-ccp.vercel.app/](https://aict-lab-ccp.vercel.app/) [cite: 106]
+
+---
+
+## ✨ Features
+
+* [cite_start]**Dynamic Product Listing**: Automatically fetches and displays products from the DummyJSON API[cite: 41, 102].
+* [cite_start]**Detailed Product Views**: Users can view specific product images, categories, and descriptions on a dedicated "See More" page[cite: 44, 46].
+* [cite_start]**Persistent Shopping Cart**: Integrated logic to add, update, and remove items with data persisting via Local Storage[cite: 48, 51, 52].
+* [cite_start]**Quantity Management**: Intelligent duplicate check that increments quantities instead of creating multiple entries for the same item[cite: 71].
+* [cite_start]**Interactive UI**: Features a promotional carousel, responsive grid layouts, and aesthetic pop-up alerts using SweetAlert2[cite: 34, 36, 40].
+* [cite_start]**Contact Interface**: A styled contact form with integrated location and contact details[cite: 55, 56].
+
+---
+
+## 🛠️ Tech Stack
+
+| Component | Technology |
+| :--- | :--- |
+| **Frontend** | [cite_start]HTML5, CSS3, Bootstrap 5.3 [cite: 32, 33, 34] |
+| **Logic** | [cite_start]JavaScript (ES6+) [cite: 35] |
+| **API** | [cite_start][DummyJSON](https://dummyjson.com/products) [cite: 37, 102] |
+| **Library** | [cite_start]SweetAlert2 (Pop-ups) [cite: 36, 103] |
+| **Storage** | [cite_start]Browser Local Storage [cite: 28, 49] |
+
+---
+
+## 📂 System Architecture
+
+* [cite_start]**index.html**: Home page featuring the navigation bar, promotional carousel, and dynamic product grid[cite: 32, 40].
+* [cite_start]**seemore.html**: Product details page that retrieves specific item data based on IDs stored in Local Storage[cite: 32, 44, 45].
+* [cite_start]**cart.html**: Shopping cart management page with real-time total price calculations[cite: 32, 54, 83].
+* [cite_start]**contact.html**: User inquiry and location information page[cite: 32, 55].
+
+---
+
+## 💻 Key Implementation Details
+
+### API Data Fetching
+```javascript
+// Fetching product data asynchronously [cite: 59, 62, 66]
+fetch('[https://dummyjson.com/products](https://dummyjson.com/products)')
+  .then(res => res.json())
+  .then((res) => {
+    res.products.map((item) => {
+      productscontainer.innerHTML += `...html code...`
+    })
+  })
+Cart Logic (Duplicate Check)
+JavaScript
+
+// Ensuring quantity increments if item exists [cite: 74, 75, 79, 81]
 let product = globalcart.find(item => item.id === res.id);
 if(!product){
     res.quantity = 1;
@@ -8,5 +64,26 @@ if(!product){
 } else {
     product.quantity++;
 }
-localStorage.setItem("cart", JSON.stringify(globalcart)); [cite: 81]
-👤 CreditsDeveloper: Mohsin Ali Mughal 22Student ID: 74669 23Instructor: Sir Kamran 24
+localStorage.setItem("cart", JSON.stringify(globalcart));
+🎓 Project Info
+
+Course: AICT Lab 
+
+
+Student: Mohsin Ali Mughal (ID: 74669) 
+
+
+Teacher: Sir Kamran 
+
+
+Submission Date: 01/14/2026 
+
+📜 References
+
+Bootstrap 5.3 Documentation 
+
+
+DummyJSON API 
+
+
+SweetAlert2
