@@ -1,22 +1,12 @@
-# E-Commerce Application
-
-## Overview
-This is a simple e-commerce application that allows users to browse products, add them to a shopping cart, and make purchases. The application is built using HTML, CSS, and JavaScript.
-
-## Features
-- **Product Listing**: View a list of available products with images, names, and prices.
-- **Product Details**: Click on a product to see detailed information.
-- **Shopping Cart**: Add products to the cart and manage your selections.
-- **Checkout Process**: Complete purchases easily.
-- **Contact Page**: Get in touch for support or inquiries.
-- **Responsive Design**: Accessible on both desktop and mobile devices.
-
-## Technology Stack
-- HTML
-- CSS
-- JavaScript
-
-## Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/mohsinalimughal/e-commerce-app.git
+E-Shop by Mohsin.io 🛒A modern, responsive E-Commerce web application developed as part of the AICT Lab course1. This project simulates a real-world online shopping experience, featuring dynamic product fetching, persistent cart management, and a sleek user interface2.+1🚀 Live DemoCheck out the live application here: https://aict-lab-ccp.vercel.app/ 3✨ Key FeaturesDynamic Product Grid: Fetches and renders real-time data from the DummyJSON API4444.+1Interactive Carousel: Displays promotional banners for a professional shopping aesthetic5.Persistent Shopping Cart: Items remain in your cart even after refreshing the page, thanks to Local Storage integration6666.+1Detailed Product Views: Navigate to specific product pages to view descriptions, categories, and adjust quantities7777.+1Smart Cart Logic: Automatically detects duplicate items to increment quantity instead of creating extra entries8888.+1Aesthetic Notifications: Integrated SweetAlert2 for beautiful, user-friendly confirmation dialogs9999.+1🛠️ Technologies UsedTechnologyUsageHTML5Semantic structure of the application10.CSS3Custom styling with a Green & Orange theme11.Bootstrap 5.3Responsive grid layouts and UI components12.JavaScript (ES6)DOM manipulation, API integration, and business logic13.DummyJSON APISource for product data and specifications14141414.+1SweetAlert2Interactive pop-up alerts15.🏗️ System ArchitectureThe application is built as a multi-page frontend experience16:Home Page (index.html): Features the product listing and carousel17.Product Details (seemore.html): Dynamic page that fetches details based on a stored Product ID18.Cart Management (cart.html): Renders items from Local Storage and calculates totals dynamically19.Contact Us (contact.html): A dedicated interface for user inquiries20.📂 Installation & SetupClone the repository:Bashgit clone https://github.com/your-username/e-shop-mohsin.git
+Navigate to the project folder:Bashcd e-shop-mohsin
+Open the project:Simply open index.html in your preferred web browser.📝 Implementation HighlightsThe core of the cart's persistence lies in the use of localStorage21:JavaScript// Adding to cart with duplicate check [cite: 74, 75, 79]
+let product = globalcart.find(item => item.id === res.id);
+if(!product){
+    res.quantity = 1;
+    globalcart.push(res);
+} else {
+    product.quantity++;
+}
+localStorage.setItem("cart", JSON.stringify(globalcart)); [cite: 81]
+👤 CreditsDeveloper: Mohsin Ali Mughal 22Student ID: 74669 23Instructor: Sir Kamran 24
